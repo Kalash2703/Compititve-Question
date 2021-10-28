@@ -1,0 +1,14 @@
+class Solution:
+	def barcketNumbers(self, S):
+	    result=[]
+	    stack=[]
+	    c=0
+	    
+	    for x in S:
+	        if x == '(':
+	            stack.append(c+1)
+	            c+=1
+	            result.append(c)
+	        elif x==')':
+	            result.append(stack.pop())
+	    return result
