@@ -1,0 +1,25 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[]
+    x=n
+    while n:
+        a.append(str(n%2))
+        n//=2
+    a=a[::-1] 
+    s=''
+    for j in range(len(a)):
+        if a[j]=='1':
+            s+='0'
+            
+        else:
+            s+='1'
+            
+    #print(a)
+    
+    
+    
+    
+    d=int(s,2)
+    
+    print(x*d)
